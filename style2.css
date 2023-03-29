@@ -7,42 +7,53 @@ html {
 }
 
 body {
+	/* ССЫЛКА НА ВАШУ КАРТИНКУ НА ФОНЕ */
+	/*background-image: url(https://source.unsplash.com/1L71sPT5XKc);*/
 	background-image: url(/assets/img/wallpapper.jpg);
 	background-size: cover;
 	font-family: "Roboto", sans-serif;
 }
 
-.text-bolid {
+.text-bold {
 	font-weight: bold;
 }
 
 .container {
 	height: 100vh;
-	min-width: 56rem;
+	max-width: 56rem;
 	margin: auto;
 	display: flex;
 	align-items: center;
 }
 
+/* Стили описания профиля */
+
 .profile {
 	width: 60%;
 	background-color: #fff;
-	opacity: .7;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	opacity: 0.7;
+	border-top-left-radius: 10%;
+	border-bottom-left-radius: 10%;
+	border: .1rem #343434 solid;
 }
 
 .profile.dark-mode {
 	background-color: #343434;
 	color: #fff;
+	border: .1rem #fefefe solid;
+}
+
+.body.dark-mode {
+	background-image: #1c1c1e;
+	color: #fefefe;
 }
 
 .profile .data {
 	padding: 3rem;
 }
 
-.profile img {
-	color: #0d664d;
+.profile svg {
+	color: #0d644d;
 	padding-right: 1rem;
 	fill: currentColor;
 	height: 1rem;
@@ -71,7 +82,7 @@ body {
 
 .link {
 	text-decoration: none;
-	color: fff;
+	color: #fff;
 	font-weight: bold;
 	font-size: medium;
 }
@@ -83,10 +94,12 @@ body {
 	justify-content: space-between;
 }
 
-.social img {
+.social svg {
 	color: #42766b;
 	height: 2rem;
 }
+
+/* Стили фотографии */
 
 .full-avatar {
 	width: 40%;
@@ -97,9 +110,14 @@ body {
 }
 
 .full-avatar img {
-	min-width: 100%;
+	max-width: 100%;
+	border-top-right-radius: 10%;
+	border-bottom-right-radius: 10%;
+	border: .1rem #1b1b1b solid;	
+	opacity: 0.9;
 }
 
+/* Стили кнопки изменения темы */
 .js-change-theme {
 	position: absolute;
 	top: 0;
@@ -113,6 +131,7 @@ body {
 	cursor: pointer;
 }
 
+/* Стили для маленьких экранов */
 @media (max-width: 1024px) {
 	.container {
 		height: 80vh;

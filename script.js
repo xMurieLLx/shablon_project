@@ -1,4 +1,4 @@
-let profileElement = document.querySelector(".profile");
+let profileElement = document.querySelector(".profile", ".body");
 let buttomThemeChange = document.querySelector("#js-change-theme-button");
 
 buttomThemeChange.addEventListener("click", function () {
